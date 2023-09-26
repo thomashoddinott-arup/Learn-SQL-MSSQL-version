@@ -1,3 +1,4 @@
+SET IDENTITY_INSERT bands ON;
 INSERT INTO bands(id,name) VALUES (1,'Seventh Wonder');
 INSERT INTO bands(id,name) VALUES (2,'Metallica');
 INSERT INTO bands(id,name) VALUES (3,'The Ocean');
@@ -5,7 +6,9 @@ INSERT INTO bands(id,name) VALUES (4,'Within Temptation');
 INSERT INTO bands(id,name) VALUES (5,'Death');
 INSERT INTO bands(id,name) VALUES (6,'Van Canto');
 INSERT INTO bands(id,name) VALUES (7,'Dream Theater');
+SET IDENTITY_INSERT bands OFF;
 
+SET IDENTITY_INSERT albums ON;
 INSERT INTO albums(id,name,release_year,band_id) VALUES (1,'Tiara',2018,1);
 INSERT INTO albums(id,name,release_year,band_id) VALUES (2,'The Great Escape',2010,1);
 INSERT INTO albums(id,name,release_year,band_id) VALUES (3,'Mercy Falls',2008,1);
@@ -24,7 +27,9 @@ INSERT INTO albums(id,name,release_year,band_id) VALUES (15,'Human',1991,5);
 INSERT INTO albums(id,name,release_year,band_id) VALUES (16,'A Storm to Come',2006,6);
 INSERT INTO albums(id,name,release_year,band_id) VALUES (17,'Break the Silence',2011,6);
 INSERT INTO albums(id,name,release_year,band_id) VALUES (18,'Tribe of Force',2010,6);
+SET IDENTITY_INSERT albums OFF;
 
+SET IDENTITY_INSERT songs ON;
 INSERT INTO songs(id,name,length,album_id) VALUES (1,'Arrival',1+(30/60),1);
 INSERT INTO songs(id,name,length,album_id) VALUES (2,'The Everones',6+(13/60),1);
 INSERT INTO songs(id,name,length,album_id) VALUES (3,'Dream Machines',5+(38/60),1);
@@ -207,3 +212,4 @@ INSERT INTO songs(id,name,length,album_id) VALUES (179,'Master of Puppets',8+(23
 INSERT INTO songs(id,name,length,album_id) VALUES (180,'Magic Taborea',3+(22/60),18);
 INSERT INTO songs(id,name,length,album_id) VALUES (181,'Hearted',4+(00/60),18);
 INSERT INTO songs(id,name,length,album_id) VALUES (182,'Frodo''s Dream',3+(06/60),18);
+SET IDENTITY_INSERT songs OFF;

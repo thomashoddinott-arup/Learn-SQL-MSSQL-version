@@ -1,11 +1,12 @@
 INSERT INTO bands (name)
-VALUES ('Favorite Band Name');
+VALUES ('Michael Jackson');
 
-/* This is the query used to get the band id of the band just added */
-/*
-  SELECT id FROM bands
-  ORDER BY id DESC LIMIT 1;
-*/
+DECLARE @BandIdToAdd table(
+    id int NOT NULL);
+insert into @BandIdToAdd(id)
+SELECT TOP 1 id 
+FROM bands
+ORDER by id DESC
 
 INSERT INTO albums (name, release_year, band_id)
-VALUES ('Favorite Album Name', 2000, 8);
+VALUES ('Thriller', 1982, (select id from @BandIdToAdd));

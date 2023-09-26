@@ -4,4 +4,4 @@ SELECT
   MAX(songs.length) AS 'Duration'
 FROM albums
 JOIN songs ON albums.id = songs.album_id
-GROUP BY songs.album_id;
+GROUP BY songs.album_id, albums.name, albums.release_year;
