@@ -155,6 +155,8 @@ Return the average length as `Average Song Duration`.
 
 Return the album name as `Album`, the album release year as `Release Year`, and the longest song length as `Duration`.
 
+hint: you will need this line `MAX(songs.length) AS 'Duration'` somewhere in your query
+
 | Album                       | Release Year | Duration | 
 |-----------------------------|--------------|----------| 
 | Tiara                       | 2018         | 9.5      | 
