@@ -1,7 +1,7 @@
 ## Setup
 Close the DB connection at https://sqliteonline.com/
 
-<img src="C:\Users\Thomas.Hoddinott\git\Learn-SQL-MSSQL-version\img\close-db-connection.PNG" alt="close-db-connection" style="zoom:33%; float:left" />
+<img src="C:\Users\Thomas.Hoddinott\git\Learn-SQL-MSSQL-version\img\close-db-connection.PNG" alt="close-db-connection" style="zoom:33%;" />
 
 
 
